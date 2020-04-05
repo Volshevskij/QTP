@@ -1,8 +1,6 @@
 ﻿using QTProj.Models;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -14,16 +12,16 @@ namespace QTProj
         {
 			using (var db = new CustomersContext())
 			{
-                var customers = db.Customers.Join(db.Calls, 
-                cust => cust.CustomerId, 
-                cal => cal.CallId,
-                (cust, cal) => new 
-                {
-                    CustomerId = cust.CustomerId,
-                    FirstName = cust.FistName,
-                    Surname = cust.Surname,
-                    Number = cal.Number
-                });
+                var customers = from call in db.Calls
+                             join customer in db.Customers on call.CustomerId equals customer.CustomerId
+                             select new
+                             {
+                                 FirstName = customer.FistName,
+                                 Surname = customer.Surname,
+                                 Address = customer.Address,
+                                 Number = call.Number,
+                                 Index = call.Index
+                             };
 
                 Grid.DataSource = customers.ToList();
                 Grid.DataBind();

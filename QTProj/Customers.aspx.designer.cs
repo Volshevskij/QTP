@@ -9,7 +9,18 @@
 
 namespace QTProj
 {
+
+
     public partial class Customers
     {
+
+        /// <summary>
+        /// Grid элемент управления.
+        /// </summary>
+        /// <remarks>
+        /// Автоматически создаваемое поле.
+        /// Для изменения переместите объявление поля из файла конструктора в файл кода программной части.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView Grid;
     }
 }

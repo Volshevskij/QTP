@@ -91,3 +91,15 @@ C:\Users\User\source\repos\QTProj\QTProj\bin\System.Numerics.Vectors.xml
 C:\Users\User\source\repos\QTProj\QTProj\bin\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\User\source\repos\QTProj\QTProj\obj\Debug\QTProj.Migrations.InitialCreate.resources
 C:\Users\User\source\repos\QTProj\QTProj\obj\Debug\QTProj.csproj.GenerateResource.cache
+C:\Users\User\source\repos\QTProj\QTProj\bin\Quartz.dll
+C:\Users\User\source\repos\QTProj\QTProj\bin\Quartz.pdb
+C:\Users\User\source\repos\QTProj\QTProj\bin\Quartz.xml
+C:\Users\User\source\repos\QTProj\QTProj\bin\EPPlus.dll
+C:\Users\User\source\repos\QTProj\QTProj\bin\IdentityModel.dll
+C:\Users\User\source\repos\QTProj\QTProj\bin\System.Text.Encodings.Web.dll
+C:\Users\User\source\repos\QTProj\QTProj\bin\EPPlus.xml
+C:\Users\User\source\repos\QTProj\QTProj\bin\IdentityModel.pdb
+C:\Users\User\source\repos\QTProj\QTProj\bin\IdentityModel.xml
+C:\Users\User\source\repos\QTProj\QTProj\bin\System.Text.Encodings.Web.xml
+C:\Users\User\source\repos\QTProj\QTProj\obj\Debug\QTProj.Migrations.customer_address.resources
+C:\Users\User\source\repos\QTProj\QTProj\obj\Debug\QTProj.Migrations.call_index.resources

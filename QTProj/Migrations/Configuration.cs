@@ -20,10 +20,12 @@
                 Customer customer = new Customer()
                 {
                     FistName = "Mark",
+                    Surname = "Smith",
+                    Address = "Ent st.1",
                     Calls = new List<Call>
                 {
-                    new Call(){Number = "341414134"},
-                    new Call(){Number = "865674364"},
+                    new Call(){Number = "341414134", Index = "72" },
+                    new Call(){Number = "865674364", Index = "73" },
                 }
                 };
 
@@ -34,7 +36,10 @@
 
             if (!context.Calls.Any())
             {             
-                context.Calls.AddOrUpdate(new Call() { Number = "341414134" }, new Call() { Number = "865674364" });
+                context.Calls.AddOrUpdate(
+                    new Call() { Number = "341414134", Index = "72" },
+                    new Call() { Number = "865674364", Index = "73" }
+                    );
 
                 context.SaveChanges();
             }
